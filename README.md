@@ -8,7 +8,7 @@ Installation
 
 1. Add `gem 'timeago-rails'` to your Gemfile.
 1. Run `bundle install`.
-1. Add `//= require timeago` to your Javascript manifest file.
+1. Add `//= require timeago` to your Javascript manifest file, after `//= require jquery`.
 
 Usage
 -----
@@ -19,6 +19,8 @@ Usage
       $('.timeago').timeago();
     </script>
 ````
+
+Note that smart-time-ago parses **ISO8601** timestamp.
 
 See the [Usage](https://github.com/pragmaticly/smart-time-ago#usage) section on the smart-time-ago project.
 
