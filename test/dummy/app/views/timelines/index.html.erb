@@ -1,0 +1,9 @@
+<h1>smart-time-ago with Rails</h1>
+
+<ul>
+<% @times.each do |t| %>
+  <li>
+    <%= content_tag :time, '', class: 'timeago', datetime: t.iso8601 %>
+  </li>
+<% end %>
+</ul>
