@@ -17,6 +17,10 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.split("\n")
   s.test_files  = Dir["test/**/*"]
 
+  s.has_rdoc         = true
+  s.rdoc_options     = ['--main', 'README.md', '--inline-source']
+  s.extra_rdoc_files = ["README.md"]
+
   s.add_dependency "rails", "~> 3.2.8"
   s.add_dependency "jquery-rails"
 
